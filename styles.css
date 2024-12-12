@@ -1,0 +1,46 @@
+#dot {
+    width: 50px;  /* Initial size */
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F43218;
+    transition: width 0.3s ease, height 0.3s ease;  /* Smooth transition for scaling */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Default background color */
+    transition: background-color 1s ease; /* Smooth transition for background color */
+}
+
+body.red-background {
+    background-color: #F43218; /* Background turns red when class is added */
+}
+
+#letsMoveText {
+  font-size: 100px;
+  font-family: Montserrat;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%; /* Centering */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: display 1s ease-in-out;
+}
+
+.textHide {
+  display: none; /* Hide the text by default */
+}
